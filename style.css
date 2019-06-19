@@ -1,0 +1,18 @@
+style.css
+td {
+    /*border: 1px solid black;*/
+    width: 100px;
+}
+
+tr:first-child {
+    font-weight: bold;
+}
+
+tr:first-child > td {
+    border-bottom: 2px solid red;
+}
+
+table {
+    border-spacing: 0;
+
+}
