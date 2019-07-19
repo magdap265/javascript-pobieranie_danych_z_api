@@ -1,9 +1,8 @@
-// fetch("http://lrodak:3001/api/users")
-//     .then((resp) => resp.json()) // Transform the data into json
-//     .then(function(data){ 
-         let data=[
-             {name:"imie",group:{name:"administratorzy"}},
-             {name:"imie1", group:{name:"administratorzy"}}];
+fetch("http://127.0.0.1:3000/users")
+    .then((resp) => resp.json()) // Transform the data into json
+    .then(function(data){ 
+
+        console.log(data);
         let userTable = document.getElementById("usersTable");
         let row = userTable.insertRow();
         let cell0 = row.insertCell(0);
@@ -24,4 +23,4 @@
         //     cell0.innerHTML = data[i].name;
         //     cell1.innerHTML = data[i].group.name;
         // }
-    // });
+    });
